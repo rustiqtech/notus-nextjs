@@ -1,11 +1,6 @@
-import React from "react";
+import React from 'react';
 // react plugin used to create google maps
-import {
-  withScriptjs,
-  withGoogleMap,
-  GoogleMap,
-  Marker,
-} from "react-google-maps";
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 
 const MapExampleScript = withScriptjs(
   withGoogleMap((props) => (
@@ -16,44 +11,44 @@ const MapExampleScript = withScriptjs(
         scrollwheel: false,
         styles: [
           {
-            featureType: "administrative",
-            elementType: "labels.text.fill",
-            stylers: [{ color: "#444444" }],
+            featureType: 'administrative',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#444444' }],
           },
           {
-            featureType: "landscape",
-            elementType: "all",
-            stylers: [{ color: "#f2f2f2" }],
+            featureType: 'landscape',
+            elementType: 'all',
+            stylers: [{ color: '#f2f2f2' }],
           },
           {
-            featureType: "poi",
-            elementType: "all",
-            stylers: [{ visibility: "off" }],
+            featureType: 'poi',
+            elementType: 'all',
+            stylers: [{ visibility: 'off' }],
           },
           {
-            featureType: "road",
-            elementType: "all",
+            featureType: 'road',
+            elementType: 'all',
             stylers: [{ saturation: -100 }, { lightness: 45 }],
           },
           {
-            featureType: "road.highway",
-            elementType: "all",
-            stylers: [{ visibility: "simplified" }],
+            featureType: 'road.highway',
+            elementType: 'all',
+            stylers: [{ visibility: 'simplified' }],
           },
           {
-            featureType: "road.arterial",
-            elementType: "labels.icon",
-            stylers: [{ visibility: "off" }],
+            featureType: 'road.arterial',
+            elementType: 'labels.icon',
+            stylers: [{ visibility: 'off' }],
           },
           {
-            featureType: "transit",
-            elementType: "all",
-            stylers: [{ visibility: "off" }],
+            featureType: 'transit',
+            elementType: 'all',
+            stylers: [{ visibility: 'off' }],
           },
           {
-            featureType: "water",
-            elementType: "all",
-            stylers: [{ color: "#cbd5e0" }, { visibility: "on" }],
+            featureType: 'water',
+            elementType: 'all',
+            stylers: [{ color: '#cbd5e0' }, { visibility: 'on' }],
           },
         ],
       }}
@@ -66,7 +61,7 @@ const MapExampleScript = withScriptjs(
 function MapExample() {
   return (
     <MapExampleScript
-      googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
+      googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOtsxfOmjCs8BP1ECHXdQYg9zBb0XqbCY"
       loadingElement={<div className="h-full" />}
       containerElement={<div className="relative w-full rounded h-600-px" />}
       mapElement={<div className="rounded h-full" />}
